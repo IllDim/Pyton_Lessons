@@ -1,0 +1,65 @@
+from turtle import *
+
+colormode(255)
+shape('turtle')
+#color('#162CF2', (238, 242, 22))
+color((117, 2, 84), (238, 242, 22))
+
+pensize(4)
+speed(0.5)
+
+# forward(100)
+# left(120)
+# fd(100)
+# lt(120)
+# fd(100)
+# lt(120)
+
+# begin_fill()
+# for _ in range (4):
+#     fd(100)
+#     lt(90)
+# end_fill()
+
+fillcolor('#16F21A')
+
+# begin_fill()
+# for _ in range (4):
+#     fd(100)
+#     lt(120)
+# end_fill()
+#
+# fd(100)
+# backward(100)
+#
+# goto(-100, 200)
+# pendown()
+r = 191
+g = 33
+b = 142
+step = 0
+for i in range(100, 10, -20):
+    fillcolor(r, g, b)
+    for _ in range(6):
+        begin_fill()
+        for _ in range (4):
+            fd(i)
+            lt(90)
+        #circle(i)
+        end_fill()
+        rt(60)
+
+    r += 7
+    b += 5
+    g += 6
+
+    # penup()
+    # step -= 150
+    # goto(step, 0)
+    pendown()
+
+penup()
+goto(0, 0)
+pendown()
+
+mainloop()
